@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="play-wrapper">
+        <div id="playArea"></div>
+        <div id="gameMessage" class="game-message hidden">Game Over</div>
+      </div>
+      <div class="scoreboard">
+        <div class="score-title">Score</div>
+        <div class="score-value" id="scoreValue">0</div>
+        <div class="score-title">Best</div>
+        <div class="score-value" id="bestScoreValue">0</div>
+      </div>
+    </div>
+
+    <script src="server.js"></script>
+  </body>
+</html>

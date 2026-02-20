@@ -1,0 +1,94 @@
+body {
+  background: rgb(12, 92, 12);
+  height: 100vh 100vmax;
+  width: 100vw 100vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 720px) {
+  .container {
+    transform: scale(0.85);
+    transform-origin: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    transform: scale(0.72);
+    gap: 12px;
+  }
+}
+
+.play-wrapper {
+  position: relative;
+}
+
+#playArea {
+  background: linear-gradient(rgb(118, 238, 118), rgb(238, 238, 112));
+  border: solid rgb(114, 3, 3) 4px;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  width: 92vmin;
+  height: 92vmin;
+}
+
+.game-message {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  color: rgb(255, 255, 255);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.scoreboard {
+  min-width: 120px;
+  color: rgb(248, 248, 248);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  text-align: center;
+}
+
+.score-title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.score-value {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 6px 0 16px;
+}
+
+.food {
+  background: rgb(238, 112, 112);
+}
+
+.head {
+  background: rgb(112, 112, 238);
+  border-radius: 50%;
+}
+
+.bodySnake {
+  background: rgb(3, 114, 3);
+}
