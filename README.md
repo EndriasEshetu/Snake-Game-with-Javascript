@@ -10,6 +10,11 @@ A simple browser-based Snake game built with plain HTML, CSS, and JavaScript.
 - Pause/resume with Space
 - Game Over overlay with Space to restart
 
+## Screenshots
+
+![Snake Game](Game-Screenshot.png)
+![Snake Game in Play](Playing-Screenshot.png)
+
 ## Controls
 
 - Arrow Keys: Move the snake
